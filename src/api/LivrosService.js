@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://osawywihwcwranmhagvw.supabase.co/functions/v1/CORS"
+const BASE_URL = "https://desafio-5-rid-66155-back-end.vercel.app"
 
 export class LivrosService{
     static getLivros(){

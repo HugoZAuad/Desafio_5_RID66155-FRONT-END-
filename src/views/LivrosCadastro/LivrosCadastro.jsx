@@ -12,7 +12,7 @@ const LivrosCadastro = () => {
     event.preventDefault();
 
     if (isNaN(Number(livro.num_paginas)) || isNaN(Number(livro.isbn))) {
-      alert('Número de Páginas e ISBN devem ser números válidos.');
+      alert('Todos os campos são obrigatorios.');
       return;
     }
 
