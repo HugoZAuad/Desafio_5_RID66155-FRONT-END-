@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3000"
+const BASE_URL = "https://osawywihwcwranmhagvw.supabase.co/functions/v1/CORS"
 
 export class LivrosService{
     static getLivros(){
