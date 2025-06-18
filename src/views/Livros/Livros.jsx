@@ -84,7 +84,7 @@ const Livros = () => {
               </div>
             </li>
           ))}
-        </ul>Add commentMore actions
+        </ul>
       </div>
     </>
   );
