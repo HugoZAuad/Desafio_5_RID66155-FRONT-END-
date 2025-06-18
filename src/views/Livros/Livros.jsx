@@ -3,11 +3,11 @@ import Header from "../../components/Header/Header";
 import "./index.scss";
 import SubmenuLivros from "../../components/SubmenuLivros/SubmenuLivros";
 import { LivrosService } from "../../api/LivrosService";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Livros = () => {
   const [livros, setLivros] = useState([]);
-  const navigate = useNavigate();
+  
 
   async function getLivros() {
     const { data } = await LivrosService.getLivros();
@@ -22,8 +22,7 @@ const Livros = () => {
       await LivrosService.deleteLivro(livroId)
         .then(({ data }) => {
           alert(data.mensagem);
-          navigate("/books");
-          window.location.reload()
+            window.location.reload()
         })
         .catch(({ response: { data, status } }) => {
           alert(`${status} - ${data.mensagem}`);
