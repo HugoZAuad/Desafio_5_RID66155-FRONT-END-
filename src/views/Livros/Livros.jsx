@@ -22,7 +22,7 @@ const Livros = () => {
       await LivrosService.deleteLivro(livroId)
         .then(({ data }) => {
           alert(data.mensagem);
-          navigate("/livros");
+          navigate("/books");
           window.location.reload()
         })
         .catch(({ response: { data, status } }) => {
