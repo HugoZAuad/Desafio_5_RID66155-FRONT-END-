@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://desafio5rid66155-back-end-production.up.railway.app//"
+const BASE_URL = "https://desafio5rid66155-back-end-production.up.railway.app/"
 
 export class LivrosService{
     static getLivros(){
