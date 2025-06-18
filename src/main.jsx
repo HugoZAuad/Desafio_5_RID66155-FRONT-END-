@@ -16,16 +16,24 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/books",
+    path: "/livros",
     element: <Livros/>,
   },
   {
     path: "/books",
     element: <Livros/>,
+  },
+  {
+    path: "/livros/cadastro",
+    element: <LivrosCadastro />,
   },
   {
     path: "/books/cadastro",
     element: <LivrosCadastro />,
+  },
+  {
+    path: "/livros/edicao/:livroId",
+    element: <LivrosEdicao />,
   },
   {
     path: "/books/edicao/:livroId",
