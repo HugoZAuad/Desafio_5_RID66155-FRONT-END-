@@ -5,6 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    historyApiFallback: true
+    // Configuração para fallback do SPA
+    historyApiFallback: true,
+    // Alternativa correta para fallback no Vite
+    history: {
+      fallback: true
+    }
   }
 })
