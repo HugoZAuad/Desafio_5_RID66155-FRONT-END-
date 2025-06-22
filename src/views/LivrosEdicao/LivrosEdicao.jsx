@@ -16,6 +16,12 @@ const LivrosEdicao = () => {
     try {
       const {data} = await LivrosService.getLivro(livroId);
       setLivro(data)
+    } catch (error) {
+      if (error.response && error.response.status === 404) {
+        setLivro(null);
+      } else {
+        alert('Erro ao carregar o livro.');
+      }
     } finally {
       setLoading(false)
     }
